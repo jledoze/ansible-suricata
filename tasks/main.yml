@@ -1,6 +1,6 @@
 ---
 # tasks file for ansible-suricata
-- include_taks: debian.yml
+- import_tasks: debian.yml
   when: ansible_os_family == "Debian"
 
 - include_tasks: configure_suricata.yml
